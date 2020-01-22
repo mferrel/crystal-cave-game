@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crystal Cave</title>
+
+<!-- dark blue is an element 
+light blue is an attribute -->
+<!-- ANYTHING YOU WRITE IN HTML IS STATIC. JAVASCRIPT AND JQUERY IS DYNAMIC -->
+      <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+      <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+<!-- 
+    MP3 IS WATER DRIPPING IN A CAVE FROM SCLOLEX ON FREESOUND.ORG -->
+    <audio src="./assets/177958__sclolex__water-dripping-in-cave.wav" autoplay loop="false" hidden="true">
+      <p>If you are reading this, it is because your browser does not support the audio element.</p>
+      </audio>
+
+    <h1>Crystal Cave Game</h1>
+
+    <div id="instructions">
+
+      <p>You will be given a random number at the start of the game.<br><br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it.<br><br>Each time when the game starts, the game will change the value of each crystal. </p>
+    </div>
+
+    <!-- RANDOM NUMBER MUST GENERATE HERE -->
+    <div id="target-number">_____</div>
+
+    <!-- JUST WORDS NO FUNCTION -->
+    <div id="your-total-score-is">Your Total Score Is...</div>
+
+    <div id="win-loss-counter">Wins:<br>Losses:</div>
+    
+    <!-- TOTAL SCORE MUST GENERATE HERE -->
+    <div id="total-score">______</div>
+
+
+    
+    <!-- CRYSTAL BUTTONS -->
+    <div id="aquamarine"></div>
+      <img src="assets/images/aquamarine.jpg"  alt="aquamarine"></img>
+
+      <div id="amethyst">
+      <img src="assets/images/amethyst.jpeg" alt="amethyst"></img></div>
+
+      <div id="opal">
+      <img src="assets/images/opal.jpeg" alt="opal"></img></div>
+
+      <div id="topaz">
+      <img src="assets/images/topaz.jpeg" alt="topaz"></img></div>
+
+  <!-- JQUERY CDN -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- JAVASCRIPT  -->
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+
+
+
+
+    <script type="text/javascript"></script>
+  </body>
+</html>
